@@ -1,0 +1,46 @@
+---
+version: "2"
+plugins:
+  csslint:
+    enabled: true
+  coffeelint:
+    enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+      #- ruby
+      - javascript
+      #- python
+      #- php
+  eslint:
+    enabled: false
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: false
+  sonar-python:
+    enabled: false
+  cppcheck:
+    enabled: false
+  shellcheck:
+    enabled: false
+
+exclude_patterns:
+- config/
+- db/
+- dist/
+- features/
+- "**/node_modules/"
+- script/
+- "**/spec/"
+- "**/test/"
+- "**/tests/"
+- Tests/
+- "**/vendor/"
+- "**/*_test.go"
+- "**/*.d.ts"
+- "**/*.min.js"
+- "**/*.min.css"
+- "**/__tests__/"
+- "**/__mocks__/"
